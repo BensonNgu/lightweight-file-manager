@@ -1,0 +1,35 @@
+{
+  "name": "lightweight-file-manager",
+  "version": "1.0.0",
+  "description": "A lightweight file manager application designed for Windows to manage and preview documents like PDF, Word, and PowerPoint files.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docx-preview": "^0.3.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.bensonngu.filemanager",
+    "productName": "File Manager",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.ico"
+    }
+  }
+}
