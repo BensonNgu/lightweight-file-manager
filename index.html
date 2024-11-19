@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightweight File Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        pre {
+            background-color: #e8e8e8;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center; padding: 20px;">
+        <img src="./images/icon-192.png" alt="App Icon" style="width: 100px; margin-right: 20px;" />
+        <div>
+            <h1>Lightweight File Manager</h1>
+            <p>A lightweight file manager application designed for Windows to manage and preview documents like PDF, Word, and PowerPoint files.</p>
+        </div>
+    </div>
+    <hr style="margin: 0 10px;">
+
+    <img src="./images/File Manager v 1.0.jpg" style="border-radius: 5px; box-shadow: 4px 7px 9px rgba(0, 0, 0, 0.5); display: block; margin: 20px auto;" alt="File Manager Preview" width="80%" />
+
+    <div style="padding: 20px; font-family: Arial, sans-serif; max-width: 800px; border-radius: 8px; background-color: #f7f9fc; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); margin: 50px auto; text-align: center;">
+        <h2 style="color: #4A90E2; font-weight: bold;">Features</h2>
+        <ul style="list-style: none; padding: 0; margin: 0 auto; display: inline-block; text-align: left;">
+            <li style="margin: 20px 0; padding: 15px;"><strong>File Management</strong>: Navigate through files and folders with an intuitive interface.</li>
+            <li style="margin: 20px 0; padding: 15px;">
+                <strong>Document Previews</strong>:
+                <ul style="margin-top: 10px; padding-left: 20px; color: #333;">
+                    <li>PDF files rendered seamlessly.</li>
+                    <li>Word documents rendered using <strong>docx-preview</strong>.</li>
+                    <li>PowerPoint files with an integrated viewer.</li>
+                </ul>
+            </li>
+            <li style="margin: 20px 0; padding: 15px;"><strong>User-Friendly Interface</strong>: Side-by-side file explorer and preview pane with support for drag-and-drop functionality.</li>
+            <li style="margin: 20px 0; padding: 15px;"><strong>Lightweight</strong>: Optimized for fast performance and minimal memory usage.</li>
+        </ul>
+    </div>
+
+    <div style="padding: 20px; font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; border-radius: 8px; background-color: #f7f9fc; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #4A90E2; font-weight: bold; text-align: center;">Tech Stack</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1 1 calc(50% - 20px); padding: 15px; border-radius: 8px; background-color: white; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+                <h3 style="color: #333;">Frontend</h3>
+                <img src="./images/electron_icon.png" alt="Electron.js" style="width: 50px; margin-bottom: 10px;">
+                <p><strong>Electron.js</strong> (desktop app framework)</p>
+                <p>Vanilla JavaScript and HTML/CSS for UI components</p>
+            </div>
+            <div style="flex: 1 1 calc(50% - 20px); padding: 15px; border-radius: 8px; background-color: white; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+                <h3 style="color: #333;">Backend</h3>
+                <img src="./images/node-js.svg" alt="Node.js" style="width: 50px; margin-bottom: 10px;">
+                <p><strong>Node.js</strong> with the <code>fs</code> and <code>path</code> modules for file handling</p>
+            </div>
+            <div style="flex: 1 1 calc(100% - 20px); padding: 15px; border-radius: 8px; background-color: white; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+                <h3 style="color: #333;">Libraries</h3>
+                <p><strong>docx-preview</strong> for Word document rendering</p>
+                <p>Native browser support for PDF and image previews</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-family: Arial, sans-serif; max-width: 1200px; margin: 50px auto;">
+     <div style="flex: 1 1 45%; padding: 20px; border-radius: 8px; background-color: #f7f9fc; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #4A90E2; font-weight: bold; text-align: center;">Installation</h2>
+        <ol style="list-style-type: decimal; margin-top: 20px; padding-left: 20px; color: #333; line-height: 1.8;">
+        <li style="margin: 15px 0;"><span>Go to the <a href="https://github.com/BensonNgu/lightweight-file-manager/releases" target="_blank" style="color: #4A90E2; text-decoration: none;">Releases</a> page.</span></li>
+        <li style="margin: 15px 0;"><span>Download the latest version for <strong>Windows</strong>.</span></li>
+        <li style="margin: 15px 0;"><span>Run the installer or portable executable.</span></li>
+        <li style="margin: 15px 0;"><span>Launch the app and start managing your files!</span></li>
+      </ol>
+    </div>
+     <div style="flex: 1 1 45%; padding: 20px; border-radius: 8px; background-color: #f7f9fc; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #4A90E2; font-weight: bold; text-align: center;">Usage</h2>
+        <ol style="list-style-type: decimal; margin-top: 20px; padding-left: 20px; color: #333; line-height: 1.8;">
+          <li style="margin: 15px 0;"><strong>Launch the app:</strong> Open the application to get started.</li>
+          <li style="margin: 15px 0;"><strong>Browse directories:</strong> Navigate through folders using the file explorer.</li>
+          <li style="margin: 15px 0;"><strong>Preview files:</strong> Click on supported files (PDF, Word, PowerPoint) to view them instantly.</li>
+          <li style="margin: 15px 0;"><strong>Toggle sidebar:</strong> Maximize the preview area by hiding or showing the sidebar.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div style="padding: 20px; font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; border-radius: 8px; background-color: #f7f9fc; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+     <h2 style="color: #4A90E2; font-weight: bold; text-align: center;">Future Enhancements</h2>
+     <ul style="list-style:none; color: #333; margin-top: 20px; line-height: 1.8; padding-left: 20px;">
+       <li style="margin: 15px 0;display: flex; align-items: center;">
+         <img src="./images/pin.png" width="30px"/>
+         <span><strong>Support for additional file types:</strong> Expand compatibility to include spreadsheets, audio, and video files.</span>
+       </li>
+       <li style="margin: 15px 0;display: flex; align-items: center;">
+         <img src="./images/pin.png" width="30px"/>
+         <span><strong>Advanced search and filtering options:</strong> Enhance file exploration with robust search features.</span>
+       </li>
+       <li style="margin: 15px 0;display: flex; align-items: center;">
+         <img src="./images/pin.png" width="30px"/>
+         <span><strong>Integration with cloud storage services:</strong> Allow seamless access to files stored in cloud platforms.</span>
+       </li>
+     </ul>
+   </div>
+
+    <footer style="background-color: #222; color: #ddd; padding: 20px 0; display:flex;text-align: center;">
+         <div style="max-width: 800px; margin: 0 auto; padding: 10px;">
+             <h2 style="font-weight: bold; margin-bottom: 10px; color: #f4f4f4;">Contact</h2>
+             <p>For inquiries or feedback, email <a href="mailto:bensonngu25@gmail.com" style="color: #00BFFF; text-decoration: none; font-weight: bold;">Benson</a>.</p>
+         </div>
+         <div style="max-width: 800px; margin: 0 auto; padding: 10px;">
+          <h2 style="color: #f4f4f4; font-weight: bold;">License</h2>
+          <p style="margin-top: 10px; line-height: 1.6;">
+            This project is licensed under the <strong>Apache License 2.0</strong>.
+          </p>
+          <p style="margin-top: 10px;">
+            See the <a href="https://github.com/BensonNgu/lightweight-file-manager/blob/main/LICENSE" target="_blank" style="color: #00BFFF; text-decoration: none; font-weight: bold;">LICENSE</a> file for details.
+          </p>
+         </div>
+</footer>
+</body>
+
+</html>
